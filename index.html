@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Fady Djerlil - Étudiant BUT Informatique</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans leading-relaxed selection:bg-blue-500 selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 font-bold text-2xl text-blue-500">
+                    <i class="fa-solid fa-code mr-2"></i>Fady Portfolio
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#accueil" class="hover:bg-gray-800 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Accueil</a>
+                        <a href="#a-propos" class="hover:bg-gray-800 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">À propos</a>
+                        <a href="#parcours" class="hover:bg-gray-800 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Parcours</a>
+                        <a href="#competences" class="hover:bg-gray-800 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Compétences</a>
+                        <a href="#projets" class="hover:bg-gray-800 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projets</a>
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#accueil" class="block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">Accueil</a>
+                <a href="#a-propos" class="block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">À propos</a>
+                <a href="#parcours" class="block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">Parcours</a>
+                <a href="#competences" class="block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">Compétences</a>
+                <a href="#projets" class="block hover:bg-gray-700 px-3 py-2 rounded-md text-base font-medium">Projets</a>
+                <a href="#contact" class="block bg-blue-600 text-white px-3 py-2 rounded-md text-base font-medium mt-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="accueil" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center min-h-screen">
+        <div class="w-full md:w-1/2 pr-0 md:pr-8 text-center md:text-left fade-in mt-8 md:mt-0">
+            <h2 class="text-blue-500 font-semibold tracking-wide uppercase text-sm mb-2">Portfolio Étudiant S1</h2>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6">
+                Bonjour, je suis <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Fady Djerlil</span>
+            </h1>
+            <p class="text-xl text-gray-400 mb-8">
+                Étudiant en BUT Informatique à l'IUT d'Orsay. Passionné par le développement, la modélisation 3D et les nouvelles technologies.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                <a href="#projets" class="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-500/30">
+                    Voir mes projets
+                </a>
+                <a href="#contact" class="px-8 py-3 bg-gray-800 text-white rounded-lg font-semibold hover:bg-gray-700 transition border border-gray-700">
+                    Me contacter
+                </a>
+            </div>
+
+            <div class="mt-8 flex justify-center md:justify-start space-x-6">
+                <a href="https://github.com/D-Fady" target="_blank" class="text-gray-400 hover:text-white text-2xl transition" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/fady-djerlil-035318386/" target="_blank" class="text-gray-400 hover:text-blue-400 text-2xl transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:fady.djerlil@gmail.com" class="text-gray-400 hover:text-pink-500 text-2xl transition" title="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 flex justify-center fade-in">
+            <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-blue-500 shadow-2xl shadow-blue-500/20 group bg-indigo-900">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Fady&top=shortCurly&hairColor=190C00&facialHairProbability=0&clothing=hoodie&clothingColor=3c4f76&skinColor=F1C6A0&mouth=smile&eyes=default&eyebrows=default" alt="Photo de Fady Djerlil" class="w-full h-full object-contain transform translate-y-2 group-hover:scale-105 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <section id="a-propos" class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">À Propos de Moi</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="glass-card p-8 rounded-xl hover:border-blue-500 transition duration-300">
+                    <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                        <i class="fa-solid fa-user-graduate text-blue-500 mr-3"></i>Qui suis-je ?
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed mb-4">
+                        Actuellement en première année de BUT Informatique à l'IUT d'Orsay, je m'intéresse particulièrement à la conception et au développement d'applications.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Ce portfolio a pour but de présenter mon parcours, mes compétences techniques acquises lors de mes cours et projets, ainsi que mes centres d'intérêt.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="glass-card p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                            <i class="fa-solid fa-star text-yellow-500 mr-3"></i>Mes Qualités
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-600 hover:border-blue-400 hover:text-white transition">Curieux</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-600 hover:border-blue-400 hover:text-white transition">Persévérant</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-600 hover:border-blue-400 hover:text-white transition">Esprit d'équipe</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-600 hover:border-blue-400 hover:text-white transition">Organisé</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-600 hover:border-blue-400 hover:text-white transition">Autonome</span>
+                            <span class="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm border border-gray-600 hover:border-blue-400 hover:text-white transition">Discipliné</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                            <i class="fa-solid fa-heart text-red-500 mr-3"></i>Centres d'intérêt
+                        </h3>
+                        <div class="flex flex-wrap gap-4 text-gray-400">
+                            <div class="flex items-center hover:text-blue-400 transition"><i class="fa-solid fa-gamepad mr-2 text-blue-400"></i> Jeux Vidéo</div>
+                            <div class="flex items-center hover:text-purple-400 transition"><i class="fa-solid fa-music mr-2 text-purple-400"></i> Musique</div>
+                            <div class="flex items-center hover:text-green-400 transition"><i class="fa-solid fa-dumbbell mr-2 text-green-400"></i> Sport</div>
+                            <div class="flex items-center hover:text-orange-400 transition"><i class="fa-solid fa-laptop-code mr-2 text-orange-400"></i> Développement</div>
+                            <div class="flex items-center hover:text-pink-400 transition"><i class="fa-solid fa-cubes mr-2 text-pink-400"></i> Animation et modélisation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="parcours" class="py-20 bg-gray-900 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Mon Parcours Scolaire</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="relative border-l-4 border-blue-900 ml-3 md:ml-6 space-y-12">
+
+                <div class="relative pl-8 md:pl-12 group">
+                    <div class="absolute -left-[10px] top-0 w-6 h-6 bg-blue-500 rounded-full border-4 border-gray-900 group-hover:scale-125 transition"></div>
+                    <div class="glass-card p-6 rounded-lg shadow-lg hover:shadow-blue-500/10 transition border-l-4 border-blue-500">
+                        <span class="text-blue-400 font-bold text-sm uppercase tracking-wider">2026 - Présent</span>
+                        <h3 class="text-xl font-bold text-white mt-1">BUT Informatique</h3>
+                        <h4 class="text-gray-400 font-medium">IUT d'Orsay (Université Paris-Saclay)</h4>
+                        <p class="mt-3 text-gray-400">
+                            Acquisition de compétences en développement (Java, C++, Python, Web), bases de données, réseaux et systèmes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-12 group">
+                    <div class="absolute -left-[10px] top-0 w-6 h-6 bg-gray-600 rounded-full border-4 border-gray-900 group-hover:bg-blue-500 transition"></div>
+                    <div class="glass-card p-6 rounded-lg shadow-lg hover:shadow-blue-500/10 transition border-l-4 border-gray-600 group-hover:border-blue-500">
+                        <span class="text-gray-400 group-hover:text-blue-400 transition font-bold text-sm uppercase tracking-wider">2025</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Baccalauréat Général</h3>
+                        <h4 class="text-gray-400 font-medium">Lycée Geoffroy Saint-Hilaire</h4>
+                        <p class="mt-3 text-gray-400">
+                            Spécialités : Mathématiques / NSI (Numérique et Sciences Informatiques) / Physique-Chimie.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Mes Compétences</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <div class="glass-card p-8 rounded-xl border border-gray-700 h-full">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center border-b border-gray-700 pb-3">
+                        <i class="fa-solid fa-laptop-code text-blue-500 mr-3"></i>Informatiques
+                    </h3>
+
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-4 py-2 rounded-lg bg-gray-800 border border-blue-500/50 text-white font-medium hover:bg-blue-600 hover:border-blue-600 transition shadow-lg shadow-blue-500/10 cursor-default">HTML / CSS</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-800 border border-blue-500/50 text-white font-medium hover:bg-blue-600 hover:border-blue-600 transition shadow-lg shadow-blue-500/10 cursor-default">Python / C++</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-800 border border-blue-500/50 text-white font-medium hover:bg-blue-600 hover:border-blue-600 transition shadow-lg shadow-blue-500/10 cursor-default">GitHub</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-800 border border-blue-500/50 text-white font-medium hover:bg-blue-600 hover:border-blue-600 transition shadow-lg shadow-blue-500/10 cursor-default">SQL / Bases de données</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-800 border border-blue-500/50 text-white font-medium hover:bg-blue-600 hover:border-blue-600 transition shadow-lg shadow-blue-500/10 cursor-default">VS Code</span>
+                        <span class="px-4 py-2 rounded-lg bg-gray-800 border border-blue-500/50 text-white font-medium hover:bg-blue-600 hover:border-blue-600 transition shadow-lg shadow-blue-500/10 cursor-default">Code::Blocks</span>
+                    </div>
+
+                    <div class="mt-8 pt-4 border-t border-gray-700">
+                        <p class="text-gray-400 text-sm font-semibold mb-3">Environnements :</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-gray-900 text-xs text-blue-300 rounded border border-gray-600">Git</span>
+                            <span class="px-2 py-1 bg-gray-900 text-xs text-blue-300 rounded border border-gray-600">Linux</span>
+                            <span class="px-2 py-1 bg-gray-900 text-xs text-blue-300 rounded border border-gray-600">Windows</span>
+                            <span class="px-2 py-1 bg-gray-900 text-xs text-blue-300 rounded border border-gray-600">Office 365</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-xl border border-gray-700 h-full flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center border-b border-gray-700 pb-3">
+                            <i class="fa-solid fa-earth-europe text-green-500 mr-3"></i>Langues & Soft Skills
+                        </h3>
+
+                        <div class="mb-6">
+                            <h4 class="text-white font-semibold mb-3 text-sm uppercase tracking-wide text-gray-400">Langues</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gray-900 p-3 rounded-lg border border-gray-600 flex flex-col">
+                                    <div class="flex items-center mb-1">
+                                        <span class="text-xl mr-2">🇫🇷</span>
+                                        <span class="font-bold text-white">Français</span>
+                                    </div>
+                                    <span class="text-xs text-gray-400">Langue maternelle</span>
+                                </div>
+                                <div class="bg-gray-900 p-3 rounded-lg border border-gray-600 flex flex-col">
+                                    <div class="flex items-center mb-1">
+                                        <span class="text-xl mr-2">🇬🇧</span>
+                                        <span class="font-bold text-white">Anglais</span>
+                                    </div>
+                                    <span class="text-xs text-blue-400">Niveau B2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white font-semibold mb-3 text-sm uppercase tracking-wide text-gray-400">Compétences Transverses</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                            <div class="bg-gray-800 p-2 rounded-lg text-center hover:bg-green-900/30 transition border border-transparent hover:border-green-500/50">
+                                <i class="fa-solid fa-users text-green-400 mb-1 text-lg"></i>
+                                <p class="text-xs font-medium text-gray-300">Esprit d'équipe</p>
+                            </div>
+                            <div class="bg-gray-800 p-2 rounded-lg text-center hover:bg-green-900/30 transition border border-transparent hover:border-green-500/50">
+                                <i class="fa-solid fa-shapes text-green-400 mb-1 text-lg"></i>
+                                <p class="text-xs font-medium text-gray-300">Polyvalence</p>
+                            </div>
+                            <div class="bg-gray-800 p-2 rounded-lg text-center hover:bg-green-900/30 transition border border-transparent hover:border-green-500/50">
+                                <i class="fa-solid fa-hand-holding-heart text-green-400 mb-1 text-lg"></i>
+                                <p class="text-xs font-medium text-gray-300">Investissement</p>
+                            </div>
+                             <div class="bg-gray-800 p-2 rounded-lg text-center hover:bg-green-900/30 transition border border-transparent hover:border-green-500/50">
+                                <i class="fa-solid fa-lightbulb text-green-400 mb-1 text-lg"></i>
+                                <p class="text-xs font-medium text-gray-300">Créativité</p>
+                            </div>
+                            <div class="bg-gray-800 p-2 rounded-lg text-center hover:bg-green-900/30 transition border border-transparent hover:border-green-500/50">
+                                <i class="fa-solid fa-bolt text-green-400 mb-1 text-lg"></i>
+                                <p class="text-xs font-medium text-gray-300">Réactivité</p>
+                            </div>
+                             <div class="bg-gray-800 p-2 rounded-lg text-center hover:bg-green-900/30 transition border border-transparent hover:border-green-500/50">
+                                <i class="fa-solid fa-ear-listen text-green-400 mb-1 text-lg"></i>
+                                <p class="text-xs font-medium text-gray-300">À l'écoute</p>
+                            </div>
+                             <div class="bg-gray-800 p-2 rounded-lg text-center hover:bg-green-900/30 transition border border-transparent hover:border-green-500/50">
+                                <i class="fa-solid fa-magnifying-glass-chart text-green-400 mb-1 text-lg"></i>
+                                <p class="text-xs font-medium text-gray-300">Esprit critique</p>
+                            </div>
+                             <div class="bg-gray-800 p-2 rounded-lg text-center hover:bg-green-900/30 transition border border-transparent hover:border-green-500/50">
+                                <i class="fa-solid fa-mountain text-green-400 mb-1 text-lg"></i>
+                                <p class="text-xs font-medium text-gray-300">Persévérance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="py-20 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Mes Projets</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+                    Voici quelques exemples de réalisations effectuées durant ma formation, mes stages ou sur mon temps libre.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="group glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-gray-700 hover:border-blue-500">
+                    <div class="h-48 bg-gray-700 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-blue-900/50 flex items-center justify-center group-hover:bg-blue-900/30 transition">
+                            <i class="fa-solid fa-code text-5xl text-white opacity-50"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition">Page web GSH</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            J’ai développé une page web dynamique dans le cadre d’un projet de refonte du site internet du lycée, visant à présenter les différentes formations et matières proposées.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">HTML/CSS</span>
+                            <span class="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">Projet S1</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-semibold">
+                            Voir le projet <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="group glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-gray-700 hover:border-blue-500">
+                    <div class="h-48 bg-gray-700 overflow-hidden relative">
+                         <div class="absolute inset-0 bg-purple-900/50 flex items-center justify-center group-hover:bg-purple-900/30 transition">
+                            <i class="fa-brands fa-python text-5xl text-white opacity-50"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition">[Nom du Projet 2]</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            [Description courte].
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">Python</span>
+                            <span class="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">Algo</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-semibold">
+                            Voir le code <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="group glass-card rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 border border-gray-700 hover:border-blue-500">
+                    <div class="h-48 bg-gray-700 overflow-hidden relative">
+                         <div class="absolute inset-0 bg-green-900/50 flex items-center justify-center group-hover:bg-green-900/30 transition">
+                            <i class="fa-solid fa-handshake text-5xl text-white opacity-50"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition">Stage en pharmacie</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            J’étais en charge de la gestion des stocks pharmaceutiques, de la mise en rayon, du tri selon les normes en vigueur, ainsi que de la préparation des commandes à destination des clients.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-900 text-blue-200 px-2 py-1 rounded">Expérience</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-blue-400 hover:text-blue-300 text-sm font-semibold">
+                            En savoir plus <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-950 border-t border-gray-800 pt-16 pb-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Me Contacter</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">
+                    Vous avez un projet ou une proposition ? N'hésitez pas à me contacter via l'un des moyens ci-dessous.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <a href="tel:+33612345678" class="group glass-card p-8 rounded-xl text-center hover:bg-gray-800 transition duration-300 border border-gray-700 hover:border-blue-500">
+                    <div class="w-16 h-16 bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition duration-300">
+                        <i class="fa-solid fa-phone text-2xl text-blue-400 group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Téléphone</h3>
+                    <p class="text-gray-400 group-hover:text-blue-300 transition">06 12 34 56 78</p>
+                </a>
+
+                <a href="mailto:fady.djerlil@gmail.com" class="group glass-card p-8 rounded-xl text-center hover:bg-gray-800 transition duration-300 border border-gray-700 hover:border-blue-500">
+                    <div class="w-16 h-16 bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition duration-300">
+                        <i class="fa-solid fa-envelope text-2xl text-blue-400 group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Email</h3>
+                    <p class="text-gray-400 group-hover:text-blue-300 transition">fady.djerlil@gmail.com</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/fady-djerlil-035318386/" target="_blank" class="group glass-card p-8 rounded-xl text-center hover:bg-gray-800 transition duration-300 border border-gray-700 hover:border-blue-500">
+                    <div class="w-16 h-16 bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 transition duration-300">
+                        <i class="fa-brands fa-linkedin-in text-2xl text-blue-400 group-hover:text-white transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">LinkedIn</h3>
+                    <p class="text-gray-400 group-hover:text-blue-300 transition">Voir mon profil</p>
+                </a>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">© 2025 Fady Djerlil. Tous droits réservés.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-white text-sm transition">Mentions Légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script pour le menu mobile
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Script pour le scroll smooth des liens d'ancrage
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70, // Offset pour la navbar fixe
+                        behavior: 'smooth'
+                    });
+                    // Fermer le menu mobile si ouvert
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

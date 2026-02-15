@@ -1,0 +1,33 @@
+/* style.css */
+
+/* Personnalisation de la scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+}
+
+/* Animation d'apparition */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Effet de verre pour les cartes */
+.glass-card {
+    background: rgba(31, 41, 55, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(75, 85, 99, 0.4);
+}
